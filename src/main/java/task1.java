@@ -65,7 +65,10 @@ public class task1 {
 
     public static void printAll(HashMap<String, ArrayList<Integer>> book) {
         book.entrySet().forEach(entry -> {
-            System.out.println(entry.getKey() + ":" + entry.getValue().toString().replaceAll("\\[", "").replaceAll("\\]", ""));
+            System.out.println(entry.getKey() + ":" + entry.getValue()
+                    .toString()
+                    .replaceAll("\\[", "")
+                    .replaceAll("\\]", ""));
         });
     }
 }
